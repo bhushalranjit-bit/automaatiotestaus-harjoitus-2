@@ -6,7 +6,7 @@ export function validateEmail(email) {
 
 export function validatePassword(password) {
   return typeof password === "string" &&
-    password.length >= 8;
+    password.length >= 10;
 }
 
 export function validateAge(age) {

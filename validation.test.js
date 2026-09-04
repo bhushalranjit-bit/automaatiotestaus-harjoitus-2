@@ -16,3 +16,8 @@ test("validateEmail hylkää sähköpostin ilman @ merkkiä", () => {
   const result = validateEmail("opiskelija.example.com");
   assert.strictEqual(result, false);
 });
+
+test("validatePassword hylkää liian lyhyen salasanan", () => {
+  const result = validatePassword("salasana");
+  assert.strictEqual(result, false);
+});
