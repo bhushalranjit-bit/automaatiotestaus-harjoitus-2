@@ -12,4 +12,3 @@ test("validateEmail hylkää sähköpostin ilman @ merkkiä", () => {
   assert.strictEqual(result, false);
 });
 
-
