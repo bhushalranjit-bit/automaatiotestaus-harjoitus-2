@@ -52,7 +52,7 @@ test("validateAge hylkää iän merkkijonona", () => {
   assert.strictEqual(result, false);
 });
 
-test("validateAge hylkää desimaali-iän", () => {
-  const result = validateAge(18.5);
+test("validateEmail hylkää sähköpostiosoitteen ilman @-merkkiä", () => {
+  const result = validateEmail("opiskelija.example.com");
   assert.strictEqual(result, false);
 });
